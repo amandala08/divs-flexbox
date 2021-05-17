@@ -103,47 +103,86 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
   font-size: 1.25em;
   height: 100%;
+  margin: auto;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
+.flex-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+header {
+  width: 100%;
   color: #fff;
-  line-height: 1.5em;
-  font-size: 1em;
-  background-color: #041219;
+  background-color: #946E83;
+}
+
+main {
   height: 300px;
+  width: 100%;
+  color: #615055;
+  background-color: #b4a6ab;
+}
+
+footer {
+  height: 150px;
+  width: 100%;
+  color: #fff;
+  background-color: #615055;
+}
+
+header,
+footer,
+main {
   display: flex;
-  flex-direction: column;
-  width: 33.33%;
-  padding: 0 15px;
   justify-content: center;
   align-items: center;
 }
 
-.div-1, .div-2, .div-3 p {
+.flex-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+#div-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #cdd5d1;
+}
+
+
+#div-1, #div-2, #div-3 {
+  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
+  color: #4a5952;
+  line-height: 1.5em;
+  font-size: 1em;
+  background-color: #ddf8e8;
+  height: 300px;
+  padding: 0 25px;
+}
+
+#div-1, #div-2, #div-3 p {
   text-align: center;
 }
 
-.div-1, .div-2, .div-3 h1 {
+#div-1, #div-2, #div-3 h1 {
   align-items: center;
 }
 
-.div-1 {
-  border-right: 1px solid #fff;
+#div-1 {
+  border-right: 1px solid #615055;
 }
 
-.div-3 {
-    border-left: 1px solid #fff;
+#div-3 {
+    border-left: 1px solid #615055;
   }
 }
 
